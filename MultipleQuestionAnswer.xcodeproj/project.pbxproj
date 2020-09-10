@@ -16,6 +16,13 @@
 		635D9483250A2CEC006F7465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635D9481250A2CEC006F7465 /* LaunchScreen.storyboard */; };
 		635D948E250A2CEC006F7465 /* MultipleQuestionAnswerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D948D250A2CEC006F7465 /* MultipleQuestionAnswerTests.swift */; };
 		635D9499250A2CEC006F7465 /* MultipleQuestionAnswerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D9498250A2CEC006F7465 /* MultipleQuestionAnswerUITests.swift */; };
+		635D94A8250A2DEB006F7465 /* CheckBoxTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D94A6250A2DEB006F7465 /* CheckBoxTableCell.swift */; };
+		635D94A9250A2DEB006F7465 /* CheckBoxTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 635D94A7250A2DEB006F7465 /* CheckBoxTableCell.xib */; };
+		635D94AD250A3E44006F7465 /* RadioButtonTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D94AB250A3E44006F7465 /* RadioButtonTableCell.swift */; };
+		635D94AE250A3E44006F7465 /* RadioButtonTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 635D94AC250A3E44006F7465 /* RadioButtonTableCell.xib */; };
+		635D94B1250A448B006F7465 /* TextBoxTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D94AF250A448B006F7465 /* TextBoxTableCell.swift */; };
+		635D94B2250A448B006F7465 /* TextBoxTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 635D94B0250A448B006F7465 /* TextBoxTableCell.xib */; };
+		63A45637250A986D00193AD1 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A45636250A986D00193AD1 /* QuestionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		635D9494250A2CEC006F7465 /* MultipleQuestionAnswerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipleQuestionAnswerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		635D9498250A2CEC006F7465 /* MultipleQuestionAnswerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleQuestionAnswerUITests.swift; sourceTree = "<group>"; };
 		635D949A250A2CEC006F7465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635D94A6250A2DEB006F7465 /* CheckBoxTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxTableCell.swift; sourceTree = "<group>"; };
+		635D94A7250A2DEB006F7465 /* CheckBoxTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxTableCell.xib; sourceTree = "<group>"; };
+		635D94AB250A3E44006F7465 /* RadioButtonTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonTableCell.swift; sourceTree = "<group>"; };
+		635D94AC250A3E44006F7465 /* RadioButtonTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioButtonTableCell.xib; sourceTree = "<group>"; };
+		635D94AF250A448B006F7465 /* TextBoxTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBoxTableCell.swift; sourceTree = "<group>"; };
+		635D94B0250A448B006F7465 /* TextBoxTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextBoxTableCell.xib; sourceTree = "<group>"; };
+		63A45636250A986D00193AD1 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,7 @@
 		635D9472250A2CE9006F7465 /* MultipleQuestionAnswer */ = {
 			isa = PBXGroup;
 			children = (
+				635D94AA250A3E1E006F7465 /* TableViewCells */,
 				635D9473250A2CE9006F7465 /* AppDelegate.swift */,
 				635D9475250A2CE9006F7465 /* SceneDelegate.swift */,
 				635D9477250A2CE9006F7465 /* ViewController.swift */,
@@ -109,6 +124,7 @@
 				635D9481250A2CEC006F7465 /* LaunchScreen.storyboard */,
 				635D9484250A2CEC006F7465 /* Info.plist */,
 				635D947C250A2CE9006F7465 /* MultipleQuestionAnswer.xcdatamodeld */,
+				63A45636250A986D00193AD1 /* QuestionModel.swift */,
 			);
 			path = MultipleQuestionAnswer;
 			sourceTree = "<group>";
@@ -129,6 +145,19 @@
 				635D949A250A2CEC006F7465 /* Info.plist */,
 			);
 			path = MultipleQuestionAnswerUITests;
+			sourceTree = "<group>";
+		};
+		635D94AA250A3E1E006F7465 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				635D94A6250A2DEB006F7465 /* CheckBoxTableCell.swift */,
+				635D94A7250A2DEB006F7465 /* CheckBoxTableCell.xib */,
+				635D94AB250A3E44006F7465 /* RadioButtonTableCell.swift */,
+				635D94AC250A3E44006F7465 /* RadioButtonTableCell.xib */,
+				635D94AF250A448B006F7465 /* TextBoxTableCell.swift */,
+				635D94B0250A448B006F7465 /* TextBoxTableCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +265,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				635D9483250A2CEC006F7465 /* LaunchScreen.storyboard in Resources */,
+				635D94B2250A448B006F7465 /* TextBoxTableCell.xib in Resources */,
+				635D94AE250A3E44006F7465 /* RadioButtonTableCell.xib in Resources */,
+				635D94A9250A2DEB006F7465 /* CheckBoxTableCell.xib in Resources */,
 				635D9480250A2CEC006F7465 /* Assets.xcassets in Resources */,
 				635D947B250A2CE9006F7465 /* Main.storyboard in Resources */,
 			);
@@ -263,9 +295,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				635D9478250A2CE9006F7465 /* ViewController.swift in Sources */,
+				635D94B1250A448B006F7465 /* TextBoxTableCell.swift in Sources */,
+				635D94A8250A2DEB006F7465 /* CheckBoxTableCell.swift in Sources */,
+				635D94AD250A3E44006F7465 /* RadioButtonTableCell.swift in Sources */,
 				635D9474250A2CE9006F7465 /* AppDelegate.swift in Sources */,
 				635D9476250A2CE9006F7465 /* SceneDelegate.swift in Sources */,
 				635D947E250A2CE9006F7465 /* MultipleQuestionAnswer.xcdatamodeld in Sources */,
+				63A45637250A986D00193AD1 /* QuestionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

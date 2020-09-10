@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="radioButtonTableCell" rowHeight="302" id="KGk-i7-Jjw" customClass="RadioButtonTableCell" customModule="MultipleQuestionAnswer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="302"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="302"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q) who is your favourite cricketer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05M-mU-xBr">
+                        <rect key="frame" x="5" y="10" width="310" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="yPC-Tr-b02"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="kxr-sS-E0K">
+                        <rect key="frame" x="20" y="52" width="58.5" height="153"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sachin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwU-GS-6u3">
+                                <rect key="frame" x="0.0" y="0.0" width="46.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sehwag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1j0-Kv-6Oj">
+                                <rect key="frame" x="0.0" y="45" width="54.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kohli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYQ-bF-IVt">
+                                <rect key="frame" x="0.0" y="90" width="33.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gambhir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLj-nE-oVE">
+                                <rect key="frame" x="0.0" y="135" width="58.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Dap-hN-bzi">
+                        <rect key="frame" x="270" y="50" width="20" height="158"/>
+                        <subviews>
+                            <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8D-xG-XyQ">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="KSO-y8-UAF"/>
+                                    <constraint firstAttribute="height" constant="20" id="qbV-FI-Qem"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="radio_unchecked"/>
+                                <state key="selected" image="radio_checked"/>
+                                <connections>
+                                    <action selector="rb1Clicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ewz-Uw-FBy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wj9-6b-qa4">
+                                <rect key="frame" x="0.0" y="46" width="20" height="20"/>
+                                <state key="normal" title="Button" image="radio_unchecked"/>
+                                <state key="selected" image="radio_checked"/>
+                                <connections>
+                                    <action selector="rb1Clicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="usB-Mk-uAd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFU-rB-l5d">
+                                <rect key="frame" x="0.0" y="92" width="20" height="20"/>
+                                <state key="normal" title="Button" image="radio_unchecked"/>
+                                <state key="selected" image="radio_checked"/>
+                                <connections>
+                                    <action selector="rb1Clicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="B8D-dc-fVi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="204" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vic-NZ-bs5">
+                                <rect key="frame" x="0.0" y="138" width="20" height="20"/>
+                                <state key="normal" title="Button" image="radio_unchecked"/>
+                                <state key="selected" image="radio_checked"/>
+                                <connections>
+                                    <action selector="rb1Clicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="job-I0-mo9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8N-54-7bd">
+                        <rect key="frame" x="260" y="216" width="45" height="30"/>
+                        <state key="normal" title="Delete"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="05M-mU-xBr" secondAttribute="trailing" constant="5" id="7SI-ge-vQL"/>
+                    <constraint firstItem="Dap-hN-bzi" firstAttribute="top" secondItem="05M-mU-xBr" secondAttribute="bottom" constant="20" id="DyH-6V-70p"/>
+                    <constraint firstAttribute="trailing" secondItem="Dap-hN-bzi" secondAttribute="trailing" constant="30" id="Fx9-w5-Awi"/>
+                    <constraint firstItem="05M-mU-xBr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="MKx-sd-amm"/>
+                    <constraint firstAttribute="trailing" secondItem="m8N-54-7bd" secondAttribute="trailing" constant="15" id="RZD-NC-kKI"/>
+                    <constraint firstItem="05M-mU-xBr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="ZBI-fn-JFL"/>
+                    <constraint firstItem="m8N-54-7bd" firstAttribute="top" secondItem="Dap-hN-bzi" secondAttribute="bottom" constant="8" id="d4F-ht-NjC"/>
+                    <constraint firstItem="kxr-sS-E0K" firstAttribute="top" secondItem="05M-mU-xBr" secondAttribute="bottom" constant="22" id="ios-47-42p"/>
+                    <constraint firstItem="kxr-sS-E0K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jTh-9D-c2c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="rb1" destination="s8D-xG-XyQ" id="WYQ-bR-zHb"/>
+                <outlet property="rb2" destination="wj9-6b-qa4" id="kCr-69-w64"/>
+                <outlet property="rb3" destination="fFU-rB-l5d" id="mQI-Gj-Llu"/>
+                <outlet property="rb4" destination="Vic-NZ-bs5" id="HHb-Da-Tdd"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="108.48214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="radio_checked" width="24" height="24"/>
+        <image name="radio_unchecked" width="24" height="24"/>
+    </resources>
+</document>
