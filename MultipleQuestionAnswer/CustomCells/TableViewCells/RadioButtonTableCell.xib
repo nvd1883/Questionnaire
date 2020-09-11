@@ -97,7 +97,12 @@
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8N-54-7bd">
                         <rect key="frame" x="260" y="216" width="45" height="30"/>
-                        <state key="normal" title="Delete"/>
+                        <state key="normal" title="Delete">
+                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UQ1-eq-vV1"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -112,6 +117,7 @@
                     <constraint firstItem="kxr-sS-E0K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jTh-9D-c2c"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="rb1" destination="s8D-xG-XyQ" id="WYQ-bR-zHb"/>

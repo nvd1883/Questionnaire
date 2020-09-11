@@ -13,7 +13,7 @@ struct AnswerModel:Codable {
 //    var answer:String
     var isChecked:Bool?
     var textAnswer: String?
-    var radioPosition: Int?
+    var radioPosition: Bool?
 }
 
 struct QuestionModel:Codable {

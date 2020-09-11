@@ -8,6 +8,12 @@
 
 import UIKit
 
+protocol radioButtonDelegate {
+    func radioButtonClicked(tag:Int,index: IndexPath)
+    func deleteRadioClicked(index:IndexPath)
+       
+}
+
 class RadioButtonTableCell: UITableViewCell {
     
     @IBOutlet weak var rb1: UIButton!
@@ -16,6 +22,7 @@ class RadioButtonTableCell: UITableViewCell {
     
     @IBOutlet weak var rb4: UIButton!
     var indexPath = IndexPath()
+    var rButtonDelegate : radioButtonDelegate?
     
     
     override func awakeFromNib() {
@@ -26,7 +33,7 @@ class RadioButtonTableCell: UITableViewCell {
     
     @IBAction func rb1Clicked(_ sender: UIButton) {
         deselecRadiobutons(selectedTag: sender)
-        
+        self.rButtonDelegate?.radioButtonClicked(tag : sender.tag,index: indexPath)
     }
     func deselecRadiobutons(selectedTag:UIButton){
         for i in 201 ... 204 {
@@ -60,5 +67,10 @@ class RadioButtonTableCell: UITableViewCell {
          self.rb4.isSelected = answer[3].isChecked!
          self.indexPath = index
      }
+    
+    @IBAction func deleteClicked(_ sender: Any) {
+        self.rButtonDelegate?.deleteRadioClicked(index: indexPath)
+    }
+    
     
 }

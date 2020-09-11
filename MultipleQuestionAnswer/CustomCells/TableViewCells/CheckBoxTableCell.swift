@@ -10,7 +10,10 @@ import UIKit
 
 protocol checkBoxDelegate {
     func checkBoxClicked(_ buttonTag: Int, _ senderSelected: Bool,index: IndexPath)
+    func deleteClicked(index:IndexPath)
     }
+
+
 
 
 class CheckBoxTableCell: UITableViewCell {
@@ -47,5 +50,11 @@ class CheckBoxTableCell: UITableViewCell {
         self.cb4.isSelected = answer[3].isChecked!
         self.indexPath = index
     }
+    
+    @IBAction func deleteClicked(_ sender: Any) {
+        self.checkboxDelegateHandler?.deleteClicked(index: indexPath)
+        
+    }
+    
     
 }

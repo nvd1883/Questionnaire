@@ -11,7 +11,6 @@
 		635D9476250A2CE9006F7465 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D9475250A2CE9006F7465 /* SceneDelegate.swift */; };
 		635D9478250A2CE9006F7465 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D9477250A2CE9006F7465 /* ViewController.swift */; };
 		635D947B250A2CE9006F7465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635D9479250A2CE9006F7465 /* Main.storyboard */; };
-		635D947E250A2CE9006F7465 /* MultipleQuestionAnswer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 635D947C250A2CE9006F7465 /* MultipleQuestionAnswer.xcdatamodeld */; };
 		635D9480250A2CEC006F7465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635D947F250A2CEC006F7465 /* Assets.xcassets */; };
 		635D9483250A2CEC006F7465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635D9481250A2CEC006F7465 /* LaunchScreen.storyboard */; };
 		635D948E250A2CEC006F7465 /* MultipleQuestionAnswerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D948D250A2CEC006F7465 /* MultipleQuestionAnswerTests.swift */; };
@@ -48,7 +47,6 @@
 		635D9475250A2CE9006F7465 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		635D9477250A2CE9006F7465 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		635D947A250A2CE9006F7465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		635D947D250A2CE9006F7465 /* MultipleQuestionAnswer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MultipleQuestionAnswer.xcdatamodel; sourceTree = "<group>"; };
 		635D947F250A2CEC006F7465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		635D9482250A2CEC006F7465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		635D9484250A2CEC006F7465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,16 +113,15 @@
 		635D9472250A2CE9006F7465 /* MultipleQuestionAnswer */ = {
 			isa = PBXGroup;
 			children = (
-				635D94AA250A3E1E006F7465 /* TableViewCells */,
 				635D9473250A2CE9006F7465 /* AppDelegate.swift */,
 				635D9475250A2CE9006F7465 /* SceneDelegate.swift */,
-				635D9477250A2CE9006F7465 /* ViewController.swift */,
-				635D9479250A2CE9006F7465 /* Main.storyboard */,
+				63A4563A250B6DBE00193AD1 /* Views */,
+				63A45639250B6DB800193AD1 /* Model */,
+				63A45638250B6DAC00193AD1 /* Controllers */,
+				63A4563B250B6DE200193AD1 /* CustomCells */,
 				635D947F250A2CEC006F7465 /* Assets.xcassets */,
 				635D9481250A2CEC006F7465 /* LaunchScreen.storyboard */,
 				635D9484250A2CEC006F7465 /* Info.plist */,
-				635D947C250A2CE9006F7465 /* MultipleQuestionAnswer.xcdatamodeld */,
-				63A45636250A986D00193AD1 /* QuestionModel.swift */,
 			);
 			path = MultipleQuestionAnswer;
 			sourceTree = "<group>";
@@ -158,6 +155,38 @@
 				635D94B0250A448B006F7465 /* TextBoxTableCell.xib */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		63A45638250B6DAC00193AD1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				635D9477250A2CE9006F7465 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		63A45639250B6DB800193AD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63A45636250A986D00193AD1 /* QuestionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63A4563A250B6DBE00193AD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				635D9479250A2CE9006F7465 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		63A4563B250B6DE200193AD1 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				635D94AA250A3E1E006F7465 /* TableViewCells */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +329,6 @@
 				635D94AD250A3E44006F7465 /* RadioButtonTableCell.swift in Sources */,
 				635D9474250A2CE9006F7465 /* AppDelegate.swift in Sources */,
 				635D9476250A2CE9006F7465 /* SceneDelegate.swift in Sources */,
-				635D947E250A2CE9006F7465 /* MultipleQuestionAnswer.xcdatamodeld in Sources */,
 				63A45637250A986D00193AD1 /* QuestionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,19 +652,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		635D947C250A2CE9006F7465 /* MultipleQuestionAnswer.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				635D947D250A2CE9006F7465 /* MultipleQuestionAnswer.xcdatamodel */,
-			);
-			currentVersion = 635D947D250A2CE9006F7465 /* MultipleQuestionAnswer.xcdatamodel */;
-			path = MultipleQuestionAnswer.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 635D9468250A2CE9006F7465 /* Project object */;
 }
